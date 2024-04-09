@@ -77,7 +77,7 @@ function CreateAutor({ onInsert }) {
           </label>
         </div>
         <Button variant="contained" onClick={handleInsert}>Insertar</Button>
-        <Button variant="contained" onClick={handleClear}>Limpiar Campos</Button>
+        <Button variant="contained" onClick={handleClear}>Limpiar</Button>
       </div>
     </div>
   );

@@ -21,7 +21,7 @@ function App() {
     Get();
   }, []);
 
-  const Delete = (id) => {
+  const EliminarAutors = (id) => {
     axios.delete(`https://localhost:44351/api/Autores/${id}`)
       .then(() => {
         setAutor(prevState => prevState.filter(userObj => userObj.au_id !== id));
@@ -92,7 +92,7 @@ function App() {
                 <TableCell>
                   <ButtonGroup size="small" variant="outlined" aria-label="Basic button group">
                     <Button onClick={() => setSelectedAutor(userObj)}>Editar</Button>
-                    <Button onClick={() => Delete(userObj.au_id)}>Eliminar</Button>
+                    <Button onClick={() => EliminarAutors(userObj.au_id)}>EliminarAutors</Button>
                   </ButtonGroup>
                 </TableCell>
               </TableRow>
